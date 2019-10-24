@@ -1,0 +1,211 @@
+/* Global */
+.mainContainer {
+    background-color: #f1ede5;
+}
+.navigation {
+    text-align: center;
+}
+.navigation ul {
+    padding: 0;
+    margin: 2.25em auto 1.5em auto;
+}
+.navigation ul li {
+    list-style-type:none;
+    display: inline-block;
+    text-align: center;
+    padding: 0 4.75vw;
+}
+.navigation a {
+    color: grey;
+}
+.navigation a:hover {
+    color: rgb(240, 160, 105);
+}
+.titleFont {
+    text-align: center;
+    margin: 1em 0.25em 1em 0.25em; 
+    color: rgb(95, 95, 95);
+}
+img {
+    border-radius: 3px;
+}
+#bio img, #servicesContainer img {
+    margin: 5px;
+    text-align: center;
+}
+#servicesContainer img {
+    max-height:37.5vw;
+    width: auto;
+}
+#bio img {
+    margin: 5% auto;
+    border-radius: 50%;
+    width: 75%;
+    height: 75%;
+}
+#XXLText, #XLText, #lgeText {
+    color: grey;
+    margin: .5em;
+}
+#XXLText {
+    font-size: 2.5em;
+}
+#XLText {
+    font-size: 1.25em;
+}
+#likeButtonContainer {
+    margin: 2.5%;
+}
+/* Header */
+.navbar {
+    text-align: center;
+}
+.navbar-nav {
+    margin: auto auto;
+}
+.nav-item, .dropdown-item {
+    list-style-type:none;
+    display: inline-block;
+    padding: 0 3.75vw;
+    text-align: center;
+}
+header {
+    height: 80.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#fadeMeIn {
+    opacity:0;
+    transition:2s;
+}
+#heroBanner {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.heroTitle {
+    font-size: 10vw;
+    color: #ffffff;
+}
+/*Bio*/
+#bio {
+    background-color: #f7f4ec;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#bioBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0;
+    margin: 0;
+}
+#bioContent{
+    text-align: center;
+    margin: 1em;
+
+}
+
+/*Project Container*/
+#latestProjectContainer {
+    background-color: #e4e0d7;
+    height: auto;
+    text-align: center;
+}
+#carouselExampleIndicators {
+ margin: 5vw auto;
+}
+#carousel1, #carousel2, #carousel3 {
+    margin: 2.5% 200px;
+}
+
+/*Services Container*/
+#servicesContainer, #projectsContainer {
+    background-color: #cecbc5;
+    height: auto;
+    text-align: center;
+    padding: 10px ;
+}
+
+#projectsBox {
+    padding: 20px;
+}
+
+/*Footer*/
+footer {
+    background-color: #f1ede5;
+    text-align: center;
+    padding: 0 0 2em 0; /* adding space to the bottom of the document*/
+    color: #ffffff;
+}
+.pageSpan {
+    height:77.5vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.servicesListItem {
+    margin: 1.2em;
+    padding: 0;
+}
+#servicesBox #imageBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+#servicesBox .row, #projectsBox .row {
+    margin: 7.5em auto;
+    text-align: left;
+}
+#projectsBox p, #projectsBox h2 {
+    margin: 2px auto 0 2.5%;
+    margin-left:2.5%; 
+}
+#servicesBox h2, #servicesBox p {
+    margin-top: 0.5em;
+}
+#projectsBox, #projectsBox #carousel1, #projectsBox #carousel2, #projectsBox #carousel3 {
+    padding:0;
+    margin:10px 0;
+}
+
+#map {
+    margin-top: 10px;
+}
+
+/* Possible color choices 
+honeydew
+blanchedalmond
+#f1ede5
+#ffffff
+#e4e0d7
+*/
+form {
+    text-align: center;
+}
+label, .label {
+    display: inline-block;
+    width: 100%;
+}
+.error {
+    color: red;
+    font-size: x-small;
+}
+label[for=tandcagree] {
+    width: 300px;
+}
+#serviceChosen label {
+    width: auto;
+    margin-right: 15px;
+}
+#serviceChosen input {
+    margin-right: 0;
+}
