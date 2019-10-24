@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="description"content="Page that tells the user hat the website is still in progress">
+    <meta name="keywords"content="Tracey, Guieb, Seamstress, Clothing, Alteration, Tailoring, Sewing">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style_TAG.css">
+    <!-- Social media buttons, uncomment if needed
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    -->
+    <title>{ TAG } | { ORDER }</title>
+</head>
+
+<body class="mainContainer">
+
+<!-- top navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" id="topNav">
+            <a class="navbar-brand" href="index.html">TAG</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page_in_progress.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Order<span class="sr-only">(current)</span></a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="services.html#hemming">Hemming</a>
+                    <a class="dropdown-item" href="services.html#alterations">Alterations & Upcycling</a>
+                    <a class="dropdown-item" href="services.html#repair">Garment Repair</a>
+                    <a class="dropdown-item" href="services.html#measure">Measure & Make</a>
+                    <a class="dropdown-item" href="services.html#embroidery">Embroidery</a>
+                    <a class="dropdown-item" href="services.html#pattern">Pattern Making</a>
+                </div>
+                </li>
+            </ul>
+            </div>
+    </nav>
+    <header class="d-none d-lg-inline-flex container-fluid" id="heroBanner">
+        <h1 class="heroTitle" id="fadeMeIn">
+            Need something done?
+        </h1>
+    </header>
+<!--Form-->
+    <div class="row">
+    <div class="col-1"id="gutter"></div>
+        <form action="thank_you.html" method="post" name="contactform" class="col-10">
+            <h2>We can't wait to work with you!</h2> 
+            <p> Submit your order details here and we will be in touch with you!<br> 
+            Please fill in the form to place an order with us.</p>
+            <div>
+                <label for="firstname">First Name</label>
+                <input type="text" name="firstname" id="firstname" size="30" />
+                <p id="firstname_msg"></p>
+            </div>
+
+            <div>  
+                <label for="familyname">Family Name</label>
+                <input type="text" name="familyname" id="familyname" size="30" />
+                <p id="familyname_msg"></p>
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" size="30" />
+                <p id="email_msg"></p>
+            </div>
+
+            <div>
+                <label for="phone">Phone</label>
+                <input type="phone" name="phone" id="phone" size="30" />
+                <p></p>
+            </div>
+
+            <div id="serviceChosen">
+                <span class="label">Service(s) Chosen</span>
+                
+                <input type="checkbox" name="serviceChosen[]" id="serviceChosen_hemming" value="hemming" />
+                <label for="serviceChosen_hemming">Hemming</label>
+
+                <input type="checkbox" name="serviceChosen[]" id="serviceChosen_alterations" value="alterations" />
+                <label for="serviceChosen_alterations">Alterations</label>
+
+                <input type="checkbox" name="serviceChosen[]" id="serviceChosen_upcycling" value="upcycling" />
+                <label for="serviceChosen_upcycling">Upcycling</label>
+
+                <input type="checkbox" name="serviceChosen[]" id="serviceChosen_garment_repair" value="garment_repair" />
+                <label for="serviceChosen_garment_repair">Garment Repair</label>
+
+                <input type="checkbox" name="serviceChosen[]" id="serviceChosen_measure_and_make" value="measure_and_make" />
+                <label for="serviceChosen_measure_and_make">Measure & Make</label>
+
+                <input type="checkbox" name="serviceChosen[]" id="serviceChosen_embroidery" value="embroidery" />
+                <label for="serviceChosen_embroidery">Embroidery</label>
+
+                <input type="checkbox" name="serviceChosen[]" id="serviceChosen_pattern_making" value="pattern_making" />
+                <label for="serviceChosen_pattern_making">Pattern Making</label>
+
+                <p id="serviceChosen_msg"></p>
+            </div>
+
+            <div>
+                <label for="region">Location</label>
+                <select name="region" id="region">
+                    <option value="-1">--Choose A Suburb--</option>
+                    <optgroup label="Wellington">
+                        <option value="Tawa">Tawa</option>
+                        <option value="Johnsonville">Johnsonville</option>
+                        <option value="Wellington">Wellington Central</option>
+                    </optgroup>
+                    <optgroup label="Porirua">
+                        <option value="Titahi Bay">Titahi Bay</option>
+                        <option value="Elsdon">Elsdon</option>
+                        <option value="Whitby">Whitby</option>
+                    </optgroup>
+                    <optgroup label="Hutt Valley">
+                        <option value="gis">Lower Hutt</option>
+                        <option value="hb">Upper Hutt</option>
+                    </optgroup>
+                    <optgroup label="Other">
+                        <option value="Other">Not in list</option>
+                    </optgroup>
+                </select>
+                <p id="region_msg"></p>
+            </div>
+
+            <div>
+                <span class="label">Agree</span>
+                <input id="tandcagree" name="tandcagree" type="checkbox" value="agree" />
+                <label for="tandcagree">I agree to the terms and conditions</label>
+                <p id="tandcagree_msg"></p>
+            </div>
+            
+            <div>
+                <button type="submit" name="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="col-1"id="gutter"></div>
+<!-- footer -->
+    <!-- bottom navbar -->
+    <footer class="footer">
+            <nav class="navigation" id="bottomNav">
+                <ul>
+                    <li><a href="page_in_progress.html">FAQ</a></li>
+                    <li><a href="page_in_progress.html">Privacy</a></li>
+                    <li><a href="page_in_progress.html">Terms</a></li>
+                    <li><a href="page_in_progress.html">Blog</a></li>
+                    <li><a href="page_in_progress.html">Feedback</a></li>
+                </ul>
+            </nav>
+            Website Crafted 2019 - Timothy Tomas &#169</cite> 
+    </footer>
+
+
+    <!--Importing Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--Imporitng React-->
+    
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <script src="js/script_check_form_TAG.js"></script>
+
+</body>
+</html>
